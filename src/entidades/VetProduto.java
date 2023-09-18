@@ -126,7 +126,7 @@ public class VetProduto {
 
 	public double lucro(int i) {
 
-		return produtos[i].getVenda() - produtos[i].getCusto();
+		return (produtos[i].getVenda() - produtos[i].getCusto());
 	}
 
 }
