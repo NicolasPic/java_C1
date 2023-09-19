@@ -113,11 +113,9 @@ public class VetProduto {
 				produtos[i] = null;
 
 				return 0;
-			} else if (produtos[i].getCodigo().equals(codigo) && produtos[i].getQuantidade() == 0) {
+			} else if (produtos[i].getCodigo().equals(codigo) && produtos[i].getQuantidade() > 0) {
 
-				produtos[i] = null;
-
-				return -1;
+							return -1;
 			}
 
 		}
